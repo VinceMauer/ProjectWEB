@@ -1,0 +1,237 @@
+body,
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #00D66C;
+}
+
+.card {
+    max-width: 50em;
+    position: relative;
+    top: 2em;
+    margin: auto;
+    width: 90%;
+}
+
+#headerimg img {
+    border-radius: .75em .75em 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: 10em;
+    vertical-align: middle;
+}
+
+.headerimgchange {
+    border-radius: 0em;
+}
+
+.headerimg {
+    position: relative;
+}
+
+#cardhide {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height .5s ease-out, opacity .5s ease-in;
+    border-radius: 0 0 .75em .75em;
+    background: white;
+    padding: 2em;
+}
+
+#cardhide.showform {
+    font-size: 1em;
+    opacity: 1;
+    height: 26.5em;
+}
+
+.rectangle {
+    z-index: 1;
+    border-radius: 0 0 .75em .75em;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    transition: all .5s ease-out;
+}
+
+.rectanglehide {
+    /*    transform: translateY(19.5em);*/
+    transform: translateY(23.5em);
+}
+
+#arrowdown {
+    width: 3em;
+    margin: auto;
+    display: block;
+    transition: all .5s linear;
+}
+
+.arrowup {
+    transform: rotate(180deg);
+}
+
+div > h1 {
+    position: absolute;
+    padding: 0em .5em;
+    width: 100%;
+    top: 1.5em;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+.logincard {
+    z-index: 10;
+    border-radius: .75em;
+    background: white;
+    margin: auto;
+    padding: 1.5em;
+    max-width: 50em;
+    position: relative;
+    top: 2em;
+    margin: auto;
+    width: 90%;
+}
+
+.text {
+    text-align: center;
+}
+
+.text>h2 {
+    font-size: 1.75em;
+    color: #2800A0;
+}
+
+.text>small {
+    display: block;
+    font-size: 1em;
+    margin: auto;
+    color: rgb(96, 96, 96);
+}
+
+.text p {
+    background-color: #FF3268;
+    width: 5em;
+    color: white;
+    margin-top: .5em;
+}
+
+label {
+    padding-bottom: .5em;
+    font-family: "Nexa Bold";
+    display: block;
+}
+
+section>header {
+    position: relative;
+    top: 0;
+}
+
+input {
+    width: 100%;
+    display: block;
+    padding: .5em;
+    border: 1px solid lightgrey;
+    border-radius: .5em;
+    margin-bottom: 1em;
+}
+
+input:hover {
+    border: 1px solid #2800A0;
+}
+
+input:focus {
+    border: 1px solid #2800A0;
+}
+
+input[type="submit"] {
+    width: 10em;
+    background: #FF3268;
+    display: block;
+    color: white;
+    padding: .5em 1em;
+    font-family: "Nexa Bold";
+    font-size: 1em;
+    border-radius: 2em;
+    border: none;
+    box-shadow: 0px 3px 0px #C11B4F;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+::placeholder {
+    font-style: italic;
+}
+
+.datum {
+    width: 5em;
+    display: inline-block;
+}
+
+@media only screen and (min-width: 60em) {
+    #container {
+        position: relative;
+        margin: auto;
+        width: 70%;
+        max-width: 80em;
+        z-index: 200;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr;
+    }
+    .card {
+        width: 100%;
+    }
+    .logincard {
+        height: 36.5em;
+        border-radius: 0 .75em .75em 0;
+        margin: 0em;
+        background-color: #f5f8fa
+    }
+    #headerimg img {
+        border-radius: .75em 0 0 0;
+        object-fit: cover;
+        width: 100%;
+        height: 10em;
+        vertical-align: middle;
+    }
+    .headerimg {
+        position: relative;
+    }
+    #cardhide {
+        opacity: 1;
+        height: 26.5em;
+        overflow: hidden;
+        transition: height .5s ease-out, opacity .5s ease-in;
+        border-radius: 0 0 0 .75em;
+    }
+    .rectangle {
+        opacity: 0;
+    }
+    form#loginform {
+        margin-top: 2em;
+    }
+    .text {
+        margin-top: 1.85em;
+        border-bottom: 1px solid lightgrey;
+    }
+    .text>small {
+        display: block;
+        margin-bottom: 1.85em;
+        font-size: 1em;
+        color: rgb(96, 96, 96);
+    }
+}
+
+@media only screen and (min-width: 87.5em) {
+    form#loginform {
+        margin-top: 2em;
+    }
+    .text>small {
+        margin-bottom: 3em;
+    }
+}

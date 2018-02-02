@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ****************************************
+    COLORS
+   **************************************** */
+
+.cmda-sidemenu #hamburger-icon {
+    background-color: transparent;
+    color: #00D66C;
+}
+
+.cmda-sidemenu nav {
+    background-color: white;
+    color: black;
+    z-index: 200;
+}
+
+
+/* ****************************************
+    HAMBURGER & CLOSE ICON
+   **************************************** */
+
+.cmda-sidemenu #hamburger-icon {
+    transform: scale(1.5);
+    position: absolute;
+    right: 1em;
+    top: 1.1rem;
+    font-size: 1.75rem;
+    width: 2rem;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: right .435s ease-in-out;
+    transition: right .435s ease-in-out;
+    z-index: 201;
+}
+
+.cmda-sidemenu #hamburger-icon:after {
+    content: "\2261";
+}
+
+.cmda-sidemenu #hamburger-icon:hover {
+    color: #2800A0;
+}
+
+.cmda-sidemenu #hamburger-icon.close-icon {
+    right: calc(100% - 3rem);
+}
+
+.cmda-sidemenu #hamburger-icon.close-icon:after {
+    content: "\2261";
+    color: #2800A0;
+}
+
+
+/* ****************************************
+    NAV
+   **************************************** */
+
+.cmda-sidemenu nav {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: calc(0rem - 100vw);
+    width: calc(100vw - 0rem);
+    transition-duration: .4s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+}
+
+.cmda-sidemenu nav::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+}
+
+.cmda-sidemenu nav.show {
+    right: 0;
+}

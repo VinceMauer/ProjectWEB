@@ -1,0 +1,228 @@
+    .navigation-bar img {
+        float: right;
+        margin-right: 1.25em;
+        width: 1.6em;
+        position: relative;
+        top: 1.25em;
+    }
+    
+    a[href="index.html"] img {
+        float: left;
+        margin-left: 1.5em;
+    }
+    
+    .navigation-bar img:nth-child(3) {
+        margin-right: -3em;
+    }
+    /*    *******MOE***********/
+    
+    img.moemobile {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    img.moetablet {
+        display: none;
+    }
+    
+    img.moedesktop {
+        display: none;
+    }
+    /******************************/
+    /*    *******Zoon***********/
+    
+    img.zoonmobile {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    img.zoontablet {
+        display: none;
+    }
+    
+    img.zoondesktop {
+        display: none;
+    }
+    /******************************/
+    /*    *******kinderboek***********/
+    
+    img.kinderboekmobile {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    img.kinderboektablet {
+        display: none;
+    }
+    
+    img.kinderboekdesktop {
+        display: none;
+    }
+    /******************************/
+    /**************Bron: https://www.w3schools.com/howto/howto_js_scroll_indicator.asp************/
+    
+    .header {
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+        width: 100%;
+        background-color: #f1f1f1;
+    }
+    /* The progress container (grey background) */
+    
+    .progress-container {
+        width: 100%;
+        height: 1em;
+        background: rgba(180, 180, 180, .7);
+    }
+    /* The progress bar (scroll indicator) */
+    
+    .progress-bar {
+        height: 1em;
+        background: #00D36C;
+        width: 0%;
+    }
+    /*************************************/
+    
+    .choosedevice {
+        opacity: 0;
+        transition: opacity .2s;
+        width: 80%;
+        max-width: 20em;
+        z-index: 100;
+        position: absolute;
+        background-color: white;
+        border-radius: .5em;
+        top: 6em;
+        right: 2em;
+    }
+    
+    .showchoosedevice {
+        opacity: 1 !important;
+    }
+    
+    .choosedevice img:first-child {
+        position: absolute;
+        right: 3.25em;
+        top: -1em;
+        width: 5em;
+        transform: rotate(180deg);
+    }
+    
+    .choosedevice h2 {
+        position: relative;
+        margin: 1em 1em;
+        text-align: center;
+        font-size: 1.25em;
+        left: 0;
+        right: 0;
+    }
+    
+    .choosedevice p:first-of-type {
+        margin-top: 1em;
+        background-image: url(../icons/phone.svg);
+    }
+    
+    .choosedevice p:nth-child(4) {
+        background-image: url(../icons/tablet.svg);
+    }
+    
+    .choosedevice p:hover {
+        color: #00D66C;
+    }
+    
+    .choosedevice p {
+        color: grey;
+        font-family: "Nexa Bold";
+        margin-left: 2em;
+        padding: 1em 2.5em;
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+    
+    .choosedevice p:last-of-type {
+        background-image: url(../icons/desktop.svg);
+        margin-bottom: 1em;
+    }
+    
+    @media only screen and (max-width: 60em) and (min-width: 40em) {
+        /*        *********MOE*********/
+        img.moemobile {
+            display: none;
+        }
+        img.moetablet {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+        /*        *****************/
+        /*        *****ZOON******/
+        img.zoonmobile {
+            display: none;
+        }
+        img.zoontablet {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+        img.zoondesktop {
+            display: none;
+        }
+        /*        *****************/
+        /*    *******kinderboek***********/
+        img.kinderboekmobile {
+            display: none;
+        }
+        img.kinderboektablet {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+        img.kinderboekdesktop {
+            display: none;
+        }
+        /******************************/
+    }
+    
+    @media only screen and (min-width: 60em) {
+        img.moemobile {
+            display: none;
+        }
+        img.moetablet {
+            display: none;
+        }
+        img.moedesktop {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+        /*    *******Zoon***********/
+        img.zoonmobile {
+            display: none;
+        }
+        img.zoontablet {
+            display: none;
+        }
+        img.zoondesktop {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+        /******************************/
+        /*    *******kinderboek***********/
+        img.kinderboekmobile {
+            display: none;
+        }
+        img.kinderboektablet {
+            display: none;
+        }
+        img.kinderboekdesktop {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+        /******************************/
+    }

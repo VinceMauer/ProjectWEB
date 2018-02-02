@@ -1,0 +1,221 @@
+    #profilepic {
+        width: 6em;
+        border-radius: 50%;
+        margin: auto;
+        display: block;
+        margin-top: 2em;
+    }
+    
+    .profilehead h1 {
+        text-align: center;
+        margin-top: .5em;
+        font-size: 2em;
+        color: black;
+    }
+    
+    .circle {
+        width: 6.5em;
+        height: 6.5em;
+        background-color: white;
+        border-radius: 50%;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 5.75em;
+        z-index: -1;
+        position: absolute;
+    }
+    
+    .circle:first-child {
+        width: 7em;
+        height: 7em;
+        background-color: #00D66C;
+        margin: auto;
+        top: 5.5em;
+    }
+    
+    .profilehead p {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    
+    #lijst {
+        position: relative;
+        margin-top: 1em;
+        background-color: #00D66C;
+        height: 30em;
+    }
+    
+    section img {
+        position: relative;
+        top: -.1em;
+        display: block;
+        margin: auto;
+        left: 0;
+        right: 0;
+        width: 100px;
+        z-index: 1;
+    }
+    
+    button {
+        margin-top: 1em;
+        background-color: #2800A0;
+        box-shadow: 0px 3px 0px #100051;
+        width: 8em;
+        text-align: center;
+        display: inline;
+        padding: .5em 1em;
+        margin: auto 1em 0;
+    }
+    
+    #gedownload {
+        background-color: white;
+        color: #2800A0;
+        box-shadow: 0px 3px 0px #100051;
+        border: 2px #2800A0 solid;
+        text-align: center;
+    }
+    
+    h2 {
+        color: white;
+        text-align: center;
+        position: relative;
+        right: 8em;
+    }
+    
+    .listtype {
+        margin: 1.5em 0;
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+    
+    section input[type="text"] {
+        background-image: url(../icons/seachicon%20green.svg);
+        background-repeat: no-repeat;
+        background-position: 4px;
+        display: block;
+        margin: 1em auto;
+        border: none;
+        width: 90%;
+        max-width: 30em;
+        padding: 1em;
+        padding-left: 3em;
+        height: 2em;
+        border-radius: .5em;
+        text-decoration: none;
+    }
+    
+    article>p {
+        width: 5em;
+        z-index: 1000;
+        position: absolute!important;
+        top: 1.1em;
+        margin: auto !important;
+        left: 0 !important;
+        right: 0 !important;
+        text-align: center;
+        visibility: hidden;
+        transition: opacity .5s, visibility .5s;
+    }
+    
+    .showvoltooid {
+        visibility: visible !important;
+    }
+    
+    .downloadbar {
+        transition: width 3s, opacity .75s;
+        background-color: rgba(255, 50, 104, .5);
+        height: 3.5em;
+        width: 0%;
+        top: 0;
+        position: absolute;
+        border-radius: .75em;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+    
+    .downloadgo {
+        width: 100%;
+    }
+    
+    article {
+        position: relative;
+        padding: 0em 1em;
+        height: 3.25em;
+        top: 3.5em;
+        border-radius: .75em;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 1em;
+        max-width: 30em;
+    }
+    
+    article h3,
+    article img {
+        font-size: 1.25em;
+        position: relative;
+        top: .75em;
+    }
+    
+    article>img {
+        width: 1.2em;
+        float: right;
+    }
+    
+    article img:nth-child(4) {
+        width: 1.2em;
+    }
+    
+    header>h3 {
+        color: white;
+        font-size: 1.5em;
+        margin-left: .75em;
+    }
+    
+    .calenderheader {
+        position: relative;
+        max-width: 30em;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .orderbydate {
+        background-color: orange;
+        position: absolute;
+        right: 0;
+    }
+    
+    .calenderheader img {
+        position: absolute;
+        margin-right: 1.25em;
+        display: inline;
+        width: 2.25em;
+    }
+    
+    .calenderheader img:nth-child(2) {
+        position: absolute;
+        top: .25em;
+        margin-right: 4em;
+        width: 1.5em;
+    }
+    
+    .calenderheader img:nth-child(3) {
+        transition: all .3s;
+    }
+    
+    .arrowdraai {
+        transform: rotate(180deg);
+    }
+    
+    .containerleeslijst {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .reverse {
+        flex-direction: column-reverse;
+    }
+    

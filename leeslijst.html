@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=transparant>
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/hamburger.css">
+    <link rel="stylesheet" href="style/leeslijst.css"> </head>
+
+<body>
+    <header class="navigation-bar" id="top">
+        <svg class="icon search" version="1.1" id="Laag_1" width="30px" height="30px">
+            <path class="st0 search" d="M15.5,14h-0.8l-0.3-0.3c1-1.1,1.6-2.6,1.6-4.2C16,5.9,13.1,3,9.5,3S3,5.9,3,9.5S5.9,16,9.5,16
+	            c1.6,0,3.1-0.6,4.2-1.6l0.3,0.3v0.8l5,5l1.5-1.5L15.5,14z M9.5,14C7,14,5,12,5,9.5S7,5,9.5,5S14,7,14,9.5S12,14,9.5,14z" /> </svg>
+        <svg class="icon" version="1.1" id="Laag_2" width="30px" height="30px">
+            <path class="st0" d="M17,3H7C5.9,3,5,3.9,5,5l0,16l7-3l7,3V5C19,3.9,18.1,3,17,3z" /> </svg> <img class="confirmicon" src="Image/Tekengebied%201%20kopie.png" alt="confirm">
+        <a href="index.html"><img id="logo" src="Image/transavialogo.svg" alt="Logo"></a>
+        <h1>Stories</h1>
+        <div class="cmda-sidemenu">
+            <div id="hamburger-icon"></div>
+            <nav> <span class="shadow"></span>
+                <ul>
+                    <li><a href="form.html">Mijn profiel</a></li>
+                    <li><a href="#">Mijn Leeslijst</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Taal</a></li>
+                </ul>
+                <div class="disclaimer"> <a href="">EU Notice</a> <a href="">Privacy</a> <a href="">Disclaimer</a> <a href="">Cookiebeleid</a> </div>
+            </nav>
+        </div>
+    </header>
+    <section class="zoeken">
+        <input type="text" placeholder="Zoeken"> </section>
+    <header class="profilehead">
+        <div class="circle"></div>
+        <div class="circle"></div><img id="profilepic" src="Image/profile.jpg" alt="">
+        <h1>Vince Mauer</h1>
+        <p>Mijn leeslijst</p>
+        <div class="listtype">
+            <button id="mijnleeslijst">Mijn leeslijst</button>
+            <button id="gedownload">Gedownload</button>
+        </div>
+    </header>
+    <section id="lijst"><img src="icons/arrowthing.svg" alt="whitepoint">
+        <input type="text" placeholder="Zoek in je lijst">
+        <header class="calenderheader">
+            <h3>Titel</h3> <img src="icons/calender-01.svg" alt="calender"><img src="icons/arrowdownwhite.svg" alt=""> </header>
+        <div class="containerleeslijst">
+            <article class="artikel moe">
+                <p>Voltooid!</p>
+                <div class="downloadbar"> </div> <img class="delete" src="icons/delete.svg" alt=""> <img class="download" src="icons/download.svg" alt="downloadbutton"><a href="Moe.html"><h3>38. Moe</h3></a> </article>
+            <article class="artikel kinderboek">
+                <p>Voltooid!</p>
+                <div class="downloadbar"> </div> <img src="icons/delete.svg" alt=""><img class="download" src="icons/download.svg" alt="downloadbutton">
+                <a href="#">
+                    <h3>75. Kinderboek</h3> </a>
+            </article>
+            <article class="artikel zoon">
+                <p>Voltooid!</p>
+                <div class="downloadbar"> </div> <img src="icons/delete.svg" alt=""><img class="download" src="icons/download.svg" alt="downloadbutton"> <a href="#"><h3>91. Zoon</h3> </a> </article>
+            <article class="artikel cock">
+                <p>Voltooid!</p>
+                <div class="downloadbar"> </div> <img src="icons/delete.svg" alt=""> <img class="download" src="icons/download.svg" alt="downloadbutton"> <a href="#"><h3>83. De Cock en (...)</h3></a> </article>
+        </div>
+    </section>
+    <script src="js/hamburger.js"></script>
+    <script src="js/filters.js">
+    </script>
+    <script src="js/bookmark.js"></script>
+    <script src="js/lijstdownload.js"></script>
+    <script src="js/preventmobileexit.js"></script>
+</body>
